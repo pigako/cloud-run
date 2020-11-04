@@ -9,6 +9,8 @@ app.post("/", (req, res) => {
     });
 });
 
-app.listen("80", () => {
-    console.log("START");
+const port = process.env.PORT || 8080;
+
+app.listen(port, () => {
+    console.log(`START with Port ${port}`);
 });
