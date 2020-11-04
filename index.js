@@ -25,6 +25,8 @@ app.all("/", (req, res) => {
             "data": "Not Matched"
         });
     }
+
+    res.json({});
 });
 
 const port = process.env.PORT || 8080;
