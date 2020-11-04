@@ -11,6 +11,7 @@ app.all("/", async (req, res) => {
     console.log("TYPE :: " + typeof req.body);
 
     const name = req?.body?.queryResult?.intent?.name ?? "default";
+    console.log(name);
 
     let response;
     if (name.split("/")[1] === "chatbot-study-292305") {
