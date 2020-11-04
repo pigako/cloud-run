@@ -3,6 +3,9 @@ const axios = require("axios");
 
 const app = express();
 
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
 app.all("/", (req, res) => {
     console.log(req.body);
     const name = req?.body?.queryResult?.intent?.name ?? "default";
