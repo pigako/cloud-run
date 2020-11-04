@@ -16,13 +16,11 @@ app.all("/", async (req, res) => {
     let response;
     if (name.split("/")[1] === "chatbot-study-292305") {
         response = await axios.post("http://34.64.103.223/seoul", {
-            df: req.body,
-            response: res
+            df: req.body
         });
     } else if (name.split("/")[1] === "skt-2020-09-02") {
         response = await axios.post("http://34.64.252.170/pong", {
-            df: req.body,
-            response: res
+            df: req.body
         });
     } else {
         axios.post("http://34.64.252.170/", {
