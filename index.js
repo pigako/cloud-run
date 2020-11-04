@@ -23,6 +23,8 @@ app.all("/", (req, res) => {
             "data": "Not Matched"
         });
     }
+
+    res.send("ok");
 });
 
 const port = process.env.PORT || 8080;
