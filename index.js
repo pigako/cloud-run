@@ -8,6 +8,8 @@ app.use(express.urlencoded({ extended: true }));
 
 app.all("/", async (req, res) => {
     console.log(req.body);
+    console.log("TYPE :: " + typeof req.body);
+
     const name = req?.body?.queryResult?.intent?.name ?? "default";
 
     let response;
