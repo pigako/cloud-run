@@ -19,7 +19,7 @@ app.all("/", async (req, res) => {
             df: req.body
         });
     } else if (name.split("/")[1] === "skt-2020-09-02") {
-        response = await axios.post("http://34.64.252.170/pong", {
+        response = await axios.post("http://34.64.252.170/pong/fulfillment", {
             df: req.body
         });
     } else {
