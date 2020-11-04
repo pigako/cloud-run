@@ -12,11 +12,13 @@ app.all("/", (req, res) => {
 
     if (name.split("/")[1] === "chatbot-study-292305") {
         axios.post("http://34.64.103.223/seoul", {
-            df: req.body
+            df: req.body,
+            response: res
         });
     } else if (name.split("/")[1] === "skt-2020-09-02") {
         axios.post("http://34.64.252.170/pong", {
-            df: req.body
+            df: req.body,
+            response: res
         });
     } else {
         axios.post("http://34.64.252.170/", {
