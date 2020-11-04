@@ -28,6 +28,9 @@ app.all("/", async (req, res) => {
         });
         return res.send("ok");
     }
+    console.log("===========response========");
+    console.log(response);
+    console.log(typeof response);
 
     res.json(response);
 });
