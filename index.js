@@ -29,10 +29,9 @@ app.all("/", async (req, res) => {
         return res.send("ok");
     }
     console.log("===========response========");
-    console.log(response);
-    console.log(typeof response);
+    console.log(response.data);
 
-    res.json(response);
+    res.json(response.data);
 });
 
 const port = process.env.PORT || 8080;
